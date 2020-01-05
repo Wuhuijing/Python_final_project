@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>殡葬类单位与城区面积的关系</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+<form method="POST" action="/skip">
+    <select name="option">
+        {% for L in list %}
+            <option value="{{ L }}">{{ L }}</option>
+        {% endfor %}
+    </select>
+<p><input value='跳转' type='SUBMIT'></p>
+</form>
+
+<div>
+<h3>火化炉数与火化遗体数对比</h3>
+    火化炉的数量逐年上升，但火化遗体数却维持在一个相对稳定的水平。实际上，中国的火化率从2005年见顶以来开始呈现出稳定趋势，维持在百分之五十左右，并未随着国家公布的城镇化率(城区面积)提升而继续上升，火化率应该更能反映国家的城镇化率水平，说明我们国家2005年以后的城镇化率质量相对较低，也反映出殡葬业的落后。
+
+民政部在2014年提出到2020年火化率要达到100%，目前的殡葬业基本是无法做到的，现在的火化率是在百分之五十左右，拿15年的数据进行对比，火化炉与火化遗体数的对比是1：7578，也就说火化炉一天要处理20具尸体以上，火化一具尸体大概需要40分钟左右，大量的善后工作会将这个时长推至一个小时多，当火化率提升到百分百时，至少需要一万多台火化炉。
+
+</br>
+</br>
+    <div id="2e60da002fc54a67bcbb085c3bc14905" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_2e60da002fc54a67bcbb085c3bc14905 = echarts.init(
+            document.getElementById('2e60da002fc54a67bcbb085c3bc14905'), 'white', {renderer: 'canvas'});
+        var option_2e60da002fc54a67bcbb085c3bc14905 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "\u6ba1\u846c\u7c7b\u5355\u4f4d\u6570(\u4e2a)",
+            "xAxisIndex": 0,
+            "yAxisIndex": 0,
+            "data": [
+                4530.0,
+                4559.0,
+                4382.0,
+                4357.0,
+                4103.0,
+                3951.0,
+                3896.0,
+                3754.0,
+                3669.0,
+                3549.0,
+                3284.0
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u706b\u5316\u7089\u6570(\u53f0)",
+            "connectNulls": false,
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2015",
+                    6063.0
+                ],
+                [
+                    "2014",
+                    5908.0
+                ],
+                [
+                    "2013",
+                    5743.0
+                ],
+                [
+                    "2012",
+                    5539.0
+                ],
+                [
+                    "2011",
+                    5209.0
+                ],
+                [
+                    "2010",
+                    5229.0
+                ],
+                [
+                    "2009",
+                    5123.0
+                ],
+                [
+                    "2008",
+                    4789.0
+                ],
+                [
+                    "2007",
+                    4838.0
+                ],
+                [
+                    "2006",
+                    5649.0
+                ],
+                [
+                    "2005",
+                    5037.0
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        },
+        {
+            "type": "line",
+            "name": "\u706b\u5316\u9057\u4f53\u6570(\u4e07\u5177)",
+            "connectNulls": false,
+            "xAxisIndex": 1,
+            "yAxisIndex": 1,
+            "symbolSize": 4,
+            "showSymbol": true,
+            "smooth": false,
+            "step": false,
+            "data": [
+                [
+                    "2015",
+                    459.5
+                ],
+                [
+                    "2014",
+                    459.3
+                ],
+                [
+                    "2013",
+                    468.9
+                ],
+                [
+                    "2012",
+                    477.7
+                ],
+                [
+                    "2011",
+                    468.1
+                ],
+                [
+                    "2010",
+                    474.1
+                ],
+                [
+                    "2009",
+                    454.2
+                ],
+                [
+                    "2008",
+                    453.4
+                ],
+                [
+                    "2007",
+                    442.1
+                ],
+                [
+                    "2006",
+                    430.2
+                ],
+                [
+                    "2005",
+                    450.2
+                ]
+            ],
+            "hoverAnimation": true,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            },
+            "lineStyle": {
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            },
+            "areaStyle": {
+                "opacity": 0
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6ba1\u846c\u7c7b\u5355\u4f4d\u6570(\u4e2a)"
+            ],
+            "selected": {
+                "\u6ba1\u846c\u7c7b\u5355\u4f4d\u6570(\u4e2a)": true
+            },
+            "show": true
+        },
+        {
+            "data": [
+                "\u706b\u5316\u7089\u6570(\u53f0)",
+                "\u706b\u5316\u9057\u4f53\u6570(\u4e07\u5177)"
+            ],
+            "selected": {
+                "\u706b\u5316\u7089\u6570(\u53f0)": true,
+                "\u706b\u5316\u9057\u4f53\u6570(\u4e07\u5177)": true
+            },
+            "show": true,
+            "top": "48%"
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005"
+            ]
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "2015",
+                "2014",
+                "2013",
+                "2012",
+                "2011",
+                "2010",
+                "2009",
+                "2008",
+                "2007",
+                "2006",
+                "2005"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        },
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 1,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6ba1\u846c\u7c7b\u5355\u4f4d\u6570"
+        },
+        {
+            "text": "\u706b\u5316\u7089\u6570\u4e0e\u706b\u5316\u9057\u4f53\u6570\u5bf9\u6bd4",
+            "top": "48%"
+        }
+    ],
+    "grid": [
+        {
+            "bottom": "60%"
+        },
+        {
+            "top": "60%"
+        }
+    ]
+};
+        chart_2e60da002fc54a67bcbb085c3bc14905.setOption(option_2e60da002fc54a67bcbb085c3bc14905);
+    </script>
+
+<h4>数据内容：</h4>
+{{ the_res|safe }}
+
+
+</br>
+</div>
